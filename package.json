@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-mzgol",
+  "version": "0.0.1-pre",
+  "description": "ESLint config for projects written by mzgol",
+  "main": "eslint-config-mzgol.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mzgol/eslint-config-mzgol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mzgol/eslint-config-mzgol/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config"
+  ],
+  "author": {
+    "name": "Michał Gołębiowski",
+    "email": "m.goleb@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mzgol/eslint-config-mzgol#readme",
+  "devDependencies": {
+    "eslint": "1.4.1"
+  },
+  "scripts": {
+    "test": "eslint *.js"
+  }
+}
