@@ -198,10 +198,10 @@ module.exports = {
         'no-this-before-super': 2,
         'no-var': 2,
         'object-shorthand': 2,
-        'prefer-arrow-callback': 0, // TODO enable in Node 5 (requires rest support)
+        'prefer-arrow-callback': 2,
         'prefer-const': 2,
-        'prefer-spread': 0, // TODO enable in Node 5
-        'prefer-reflect': 0, // TODO enable in Node 5
+        'prefer-spread': 2,
+        'prefer-reflect': 2,
         'prefer-template': 2,
         'require-yield': 0,
 
