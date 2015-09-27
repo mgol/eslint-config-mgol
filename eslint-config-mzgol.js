@@ -145,7 +145,7 @@ module.exports = {
         'lines-around-comment': 0,
         'linebreak-style': 0,
         'max-nested-callbacks': 0,
-        'new-cap': 2,
+        'new-cap': 0,
         'new-parens': 2,
         'newline-after-var': 0,
         'no-array-constructor': 2,
