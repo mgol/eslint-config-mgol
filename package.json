@@ -3,6 +3,10 @@
   "version": "0.0.6-pre",
   "description": "ESLint config for projects written by mzgol",
   "main": "eslint-config-mzgol.js",
+  "files": [
+    "eslint-config-mzgol.js",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/mzgol/eslint-config-mzgol.git"
