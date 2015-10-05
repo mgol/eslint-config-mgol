@@ -36,7 +36,7 @@ module.exports = {
         'use-isnan': 2,
         'valid-jsdoc': 0, // TODO enable?
         'valid-typeof': 2,
-        'no-unexpected-multiline': 0,
+        'no-unexpected-multiline': 2,
 
         // Best practices
         'accessor-pairs': 2,
@@ -78,7 +78,7 @@ module.exports = {
         'no-param-reassign': 0,
         'no-process-env': 0,
         'no-proto': 2,
-        'no-redeclare': 0, // not useful with const/let
+        'no-redeclare': 2,
         'no-return-assign': 2,
         'no-script-url': 2,
         'no-self-compare': 2,
@@ -155,6 +155,7 @@ module.exports = {
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [2, {max: 2}],
         'no-nested-ternary': 2,
+        'no-negated-condition': 2,
         'no-new-object': 2,
         'no-restricted-syntax': 0, // already handled via no-with; would be: [2, 'WithStatement'],
         'no-spaced-func': 2,
@@ -163,10 +164,7 @@ module.exports = {
         'no-underscore-dangle': 0,
         'no-unneeded-ternary': 2,
         'object-curly-spacing': [2, 'never'],
-        'one-var': [2, {
-            uninitialized: 'always',
-            initialized: 'never',
-        }],
+        'one-var': [2, {initialized: 'never'}],
         'operator-assignment': 2,
         'operator-linebreak': [2, 'after'],
         'padded-blocks': 0,

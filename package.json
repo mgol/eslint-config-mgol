@@ -22,9 +22,9 @@
   "license": "MIT",
   "homepage": "https://github.com/mzgol/eslint-config-mzgol#readme",
   "devDependencies": {
-    "eslint": "1.4.1"
+    "eslint": "1.6.0"
   },
   "scripts": {
-    "test": "eslint ."
+    "test": "./scripts/build-eslintrc.js && eslint ."
   }
 }
