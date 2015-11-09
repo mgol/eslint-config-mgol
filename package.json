@@ -30,6 +30,6 @@
     "lodash": "3.10.1"
   },
   "scripts": {
-    "test": "eslint ."
+    "test": "./scripts/find-new-rules.js && eslint ."
   }
 }

@@ -16,7 +16,8 @@ const allRules =
 const newRules = _.difference(allRules, currentRules);
 
 if (newRules.length) {
-    console.log(`New rules: ${ newRules.join(', ') }.`);
-} else {
-    console.log('No new rules!');
+    console.log(`New rules to add to the config: ${ newRules.join(', ') }.`);
+    process.exit(1);
 }
+
+console.log('No new rules!');
