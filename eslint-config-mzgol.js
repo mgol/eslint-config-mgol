@@ -142,7 +142,6 @@ module.exports = {
         indent: 0, // TODO try to enable it
         'jsx-quotes': 0,
         'key-spacing': 2,
-
         // Re-enable when commented out lines * ESLint pragmas work; was:
         // [2, {beforeBlockComment: true, beforeLineComment: true, allowBlockStart: true}],
         'lines-around-comment': 0,
@@ -194,7 +193,8 @@ module.exports = {
         'arrow-spacing': 2,
         'constructor-super': 2,
         'generator-star-spacing': [2, {before: true, after: false}],
-        'no-arrow-condition': 2,
+        // Arrow returning a ternary is disallowed; wrapping in braces doesn't help.
+        'no-arrow-condition': 0,
         'no-class-assign': 2,
         'no-const-assign': 2,
         'no-dupe-class-members': 2,
