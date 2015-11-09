@@ -19,5 +19,3 @@ if (newRules.length) {
     console.log(`New rules to add to the config: ${ newRules.join(', ') }.`);
     process.exit(1);
 }
-
-console.log('No new rules!');
