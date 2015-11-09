@@ -1,0 +1,9 @@
+{
+    "root": true,
+
+    "extends": "./eslint-config-mzgol.js",
+
+    "env": {
+        "node": true
+    }
+}

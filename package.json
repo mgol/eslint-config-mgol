@@ -30,6 +30,6 @@
     "lodash": "3.10.1"
   },
   "scripts": {
-    "test": "./scripts/build-eslintrc.js && eslint ."
+    "test": "eslint ."
   }
 }
