@@ -2,8 +2,6 @@
 
 'use strict';
 
-/* eslint-disable no-process-exit */
-
 // TODO remove this script & just extend the exported rules file when
 // https://github.com/eslint/eslint/issues/3102 gets fixed.
 
