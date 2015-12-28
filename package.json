@@ -1,18 +1,18 @@
 {
-  "name": "eslint-config-mzgol",
+  "name": "eslint-config-mgol",
   "version": "0.0.10-pre",
-  "description": "ESLint config for projects written by mzgol",
-  "main": "eslint-config-mzgol.js",
+  "description": "ESLint config for projects written by mgol",
+  "main": "eslint-config-mgol.js",
   "files": [
-    "eslint-config-mzgol.js",
+    "eslint-config-mgol.js",
     "LICENSE"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mzgol/eslint-config-mzgol.git"
+    "url": "git+ssh://git@github.com/mgol/eslint-config-mgol.git"
   },
   "bugs": {
-    "url": "https://github.com/mzgol/eslint-config-mzgol/issues"
+    "url": "https://github.com/mgol/eslint-config-mgol/issues"
   },
   "keywords": [
     "eslint",
@@ -24,7 +24,7 @@
     "email": "m.goleb@gmail.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/mzgol/eslint-config-mzgol#readme",
+  "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
     "eslint": "1.10.3",
     "lodash": "3.10.1"
