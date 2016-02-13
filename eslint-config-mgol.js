@@ -1,6 +1,10 @@
 'use strict';
 
 module.exports = {
+    parserOptions: {
+        ecmaVersion: 6,
+    },
+
     env: {
         es6: true,
     },
@@ -40,6 +44,7 @@ module.exports = {
 
         // Best practices
         'accessor-pairs': 2,
+        'array-callback-return': 2,
         'block-scoped-var': 0,
         complexity: [1, 10],
         'consistent-return': 2,
@@ -54,19 +59,21 @@ module.exports = {
         'no-case-declarations': 2,
         'no-div-regex': 0,
         'no-else-return': 2,
-        'no-empty-label': 2,
+        'no-empty-function': 0, // TODO turn it on when ESLint 2.0.1 gets released
         'no-empty-pattern': 2,
         'no-eq-null': 0,
         'no-eval': 2,
         'no-extend-native': 2,
         'no-extra-bind': 2,
+        'no-extra-label': 2,
         'no-fallthrough': 2,
         'no-floating-decimal': 2,
         'no-implicit-coercion': [2, {boolean: false, number: true, string: false}],
+        'no-implicit-globals': 2,
         'no-implied-eval': 2,
         'no-invalid-this': 0,
         'no-iterator': 2,
-        'no-labels': 2,
+        'no-labels': [2, {allowLoop: true, allowSwitch: true}],
         'no-lone-blocks': 0,
         'no-loop-func': 0,
         'no-magic-numbers': 0,
@@ -84,10 +91,13 @@ module.exports = {
         'no-redeclare': 2,
         'no-return-assign': 2,
         'no-script-url': 2,
+        'no-self-assign': 2,
         'no-self-compare': 2,
         'no-sequences': 2,
         'no-throw-literal': 2,
+        'no-unmodified-loop-condition': 2,
         'no-unused-expressions': 2,
+        'no-unused-labels': 2,
         'no-useless-call': 2,
         'no-useless-concat': 2,
         'no-void': 2,
@@ -122,6 +132,7 @@ module.exports = {
         'no-new-require': 2,
         'no-path-concat': 0,
         'no-process-exit': 2,
+        'no-restricted-imports': 0,
         'no-restricted-modules': 0,
         'no-sync': 0, // in some projects this might be useful
 
@@ -139,9 +150,11 @@ module.exports = {
         'func-style': [2, 'expression'],
         'id-length': 0,
         'id-match': 0,
+        'id-blacklist': [2, 'arguments', 'event'],
         indent: 0, // TODO try to enable it
         'jsx-quotes': 0,
         'key-spacing': 2,
+        'keyword-spacing': 2,
         // Re-enable when commented out lines * ESLint pragmas work; was:
         // [2, {beforeBlockComment: true, beforeLineComment: true, allowBlockStart: true}],
         'lines-around-comment': 0,
@@ -150,6 +163,7 @@ module.exports = {
         'new-cap': 0,
         'new-parens': 2,
         'newline-after-var': 0,
+        'newline-per-chained-call': [2, {ignoreChainWithDepth: 3}],
         'no-array-constructor': 2,
         'no-continue': 0,
         'no-inline-comments': 0,
@@ -160,6 +174,7 @@ module.exports = {
         'no-negated-condition': 2,
         'no-new-object': 2,
         'no-restricted-syntax': 0, // already handled via no-with; would be: [2, 'WithStatement'],
+        'no-whitespace-before-property': 2,
         'no-spaced-func': 2,
         'no-ternary': 0,
         'no-trailing-spaces': 2,
@@ -167,6 +182,7 @@ module.exports = {
         'no-unneeded-ternary': 2,
         'object-curly-spacing': [2, 'never'],
         'one-var': [2, {initialized: 'never'}],
+        'one-var-declaration-per-line': 0, // I don't use this declaration style
         'operator-assignment': 2,
         'operator-linebreak': [2, 'after'],
         'padded-blocks': 0,
@@ -176,13 +192,11 @@ module.exports = {
         'semi-spacing': 2,
         semi: 2,
         'sort-vars': 0,
-        'space-after-keywords': 2,
-        'space-before-keywords': 2,
+        'sort-imports': 0, // It sorts by the member syntax, not by module names
         'space-before-blocks': 2,
         'space-before-function-paren': [2, {anonymous: 'always', named: 'never'}],
         'space-in-parens': [2, 'never'],
         'space-infix-ops': 2,
-        'space-return-throw-case': 2,
         'space-unary-ops': 2,
         'spaced-comment': 2,
         'wrap-regex': 0,
@@ -194,19 +208,24 @@ module.exports = {
         'constructor-super': 2,
         'generator-star-spacing': [2, {before: true, after: false}],
         // Arrow returning a ternary is disallowed; wrapping in braces doesn't help.
-        'no-arrow-condition': 0,
         'no-class-assign': 2,
+        'no-confusing-arrow': 0,
         'no-const-assign': 2,
         'no-dupe-class-members': 2,
+        'no-new-symbol': 2,
         'no-this-before-super': 2,
         'no-var': 2,
+        'no-useless-constructor': 2,
         'object-shorthand': 2,
         'prefer-arrow-callback': 2,
         'prefer-const': 2,
         'prefer-spread': 2,
         'prefer-reflect': 2,
+        'prefer-rest-params': 2,
         'prefer-template': 2,
         'require-yield': 0,
+        'template-curly-spacing': [2, 'always'],
+        'yield-star-spacing': [2, 'after'],
 
         // Legacy
         'max-depth': 0,

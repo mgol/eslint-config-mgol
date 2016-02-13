@@ -26,8 +26,8 @@
   "license": "MIT",
   "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
-    "eslint": "1.10.3",
-    "lodash": "3.10.1"
+    "eslint": "2.0.0",
+    "lodash": "4.3.0"
   },
   "scripts": {
     "test": "./scripts/find-new-rules.js && eslint ."
