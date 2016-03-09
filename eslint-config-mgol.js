@@ -59,7 +59,7 @@ module.exports = {
         'no-case-declarations': 2,
         'no-div-regex': 0,
         'no-else-return': 2,
-        'no-empty-function': 0, // TODO turn it on when ESLint 2.0.1 gets released
+        'no-empty-function': 2,
         'no-empty-pattern': 2,
         'no-eq-null': 0,
         'no-eval': 2,
@@ -116,6 +116,7 @@ module.exports = {
         'no-catch-shadow': 0,
         'no-delete-var': 2,
         'no-label-var': 2,
+        'no-restricted-globals': [2, 'arguments', 'event'],
         'no-shadow-restricted-names': 2,
         'no-shadow': 0,
         'no-undef-init': 2,
@@ -150,7 +151,7 @@ module.exports = {
         'func-style': [2, 'expression'],
         'id-length': 0,
         'id-match': 0,
-        'id-blacklist': [2, 'arguments', 'event'],
+        'id-blacklist': [2, 'arguments'],
         indent: 0, // TODO try to enable it
         'jsx-quotes': 0,
         'key-spacing': 2,
@@ -163,6 +164,7 @@ module.exports = {
         'new-cap': 0,
         'new-parens': 2,
         'newline-after-var': 0,
+        'newline-before-return': 0,
         'newline-per-chained-call': [2, {ignoreChainWithDepth: 4}],
         'no-array-constructor': 2,
         'no-continue': 0,
