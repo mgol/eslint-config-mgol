@@ -6,6 +6,7 @@
 // preset. It helps with upgrading the preset when new ESLint gets released.
 
 const fs = require('fs');
+const exit = require('exit');
 const _ = require('lodash');
 
 const currentRules = Object.keys(require('../eslint-config-mgol').rules);
@@ -17,5 +18,5 @@ const newRules = _.difference(allRules, currentRules);
 
 if (newRules.length) {
     console.log(`New rules to add to the config: ${ newRules.join(', ') }.`);
-    process.exit(1);
+    exit(1);
 }
