@@ -227,7 +227,7 @@ module.exports = {
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
         'prefer-spread': 'error',
-        'prefer-reflect': 'error',
+        'prefer-reflect': ['error', {exceptions: ['delete']}],
         'prefer-rest-params': 'error',
         'prefer-template': 'error',
         'require-yield': 'off',
