@@ -26,11 +26,11 @@
   "license": "MIT",
   "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
-    "eslint": "2.8.0",
-    "exit": "0.1.2",
-    "lodash": "4.11.1"
+    "eslint": "2.9.0",
+    "eslint-find-rules": "1.9.2"
   },
   "scripts": {
-    "test": "./scripts/find-new-rules.js && eslint ."
+    "pretest": "eslint-find-rules -u",
+    "test": "eslint ."
   }
 }

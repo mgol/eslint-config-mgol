@@ -38,6 +38,7 @@ module.exports = {
         'no-sparse-arrays': 'error',
         'no-unreachable': 'error',
         'use-isnan': 'error',
+        'no-unsafe-finally': 'error',
         'valid-jsdoc': 'off', // TODO enable?
         'valid-typeof': 'error',
         'no-unexpected-multiline': 'error',
@@ -220,6 +221,7 @@ module.exports = {
         'no-new-symbol': 'error',
         'no-this-before-super': 'error',
         'no-var': 'error',
+        'no-useless-computed-key': 'error',
         'no-useless-constructor': 'error',
         'object-shorthand': 'error',
         'prefer-arrow-callback': 'error',
