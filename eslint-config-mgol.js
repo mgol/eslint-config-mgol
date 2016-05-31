@@ -34,6 +34,7 @@ module.exports = {
         'no-irregular-whitespace': 'error',
         'no-negated-in-lhs': 'error',
         'no-obj-calls': 'error',
+        'no-prototype-builtins': 'error',
         'no-regex-spaces': 'error',
         'no-sparse-arrays': 'error',
         'no-unreachable': 'error',
@@ -186,6 +187,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-unneeded-ternary': 'error',
         'object-curly-spacing': ['error', 'never'],
+        'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
         'one-var': ['error', {initialized: 'never'}],
         'one-var-declaration-per-line': 'off', // I don't use this declaration style
         'operator-assignment': 'error',
@@ -204,6 +206,7 @@ module.exports = {
         'space-infix-ops': 'error',
         'space-unary-ops': 'error',
         'spaced-comment': 'error',
+        'unicode-bom': ['error', 'never'],
         'wrap-regex': 'off',
 
         // ECMAScript 6
@@ -223,6 +226,7 @@ module.exports = {
         'no-var': 'error',
         'no-useless-computed-key': 'error',
         'no-useless-constructor': 'error',
+        'no-useless-rename': 'error',
         'object-shorthand': 'error',
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
