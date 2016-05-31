@@ -154,7 +154,7 @@ module.exports = {
         'func-style': ['error', 'expression'],
         'id-length': 'off',
         'id-match': 'off',
-        'id-blacklist': ['error', 'event'],
+        'id-blacklist': ['error', 'arguments', 'event'],
         indent: 'off', // TODO try to enable it
         'jsx-quotes': 'off',
         'key-spacing': 'error',
