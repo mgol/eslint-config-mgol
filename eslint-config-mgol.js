@@ -54,7 +54,7 @@ module.exports = {
         'default-case': 'error',
         'dot-notation': 'error',
         'dot-location': ['error', 'property'],
-        eqeqeq: ['error', 'smart'],
+        eqeqeq: ['error', 'allow-null'],
         'guard-for-in': 'off',
         'no-alert': 'error',
         'no-caller': 'error',
