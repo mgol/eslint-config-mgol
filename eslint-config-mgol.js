@@ -16,7 +16,7 @@ module.exports = {
         'comma-dangle': ['error', 'always-multiline'],
         'no-cond-assign': 'error',
         'no-console': 'off',
-        'no-constant-condition': 'error',
+        'no-constant-condition': ['error', {checkLoops: false}],
         'no-control-regex': 'error',
         'no-debugger': 'error',
         'no-dupe-args': 'error',
