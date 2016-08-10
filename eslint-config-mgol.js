@@ -166,7 +166,7 @@ module.exports = {
         'max-len': ['error', 100, 4, {ignoreUrls: true}],
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
-        'multiline-ternary': 'error',
+        'multiline-ternary': 'off',
         'new-cap': 'off',
         'new-parens': 'error',
         'newline-after-var': 'off',
