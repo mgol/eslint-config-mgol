@@ -15,7 +15,7 @@ Install the rules by running:
 npm install --save-dev eslint eslint-config-mgol 
 ```
 
-Then add the extends to your `.eslintrc`:
+Then add the extends to your `.eslintrc.json`:
 
 ```javascript
 {
