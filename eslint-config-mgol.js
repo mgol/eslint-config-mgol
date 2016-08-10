@@ -186,6 +186,7 @@ module.exports = {
         'no-restricted-syntax': 'off',
         'no-whitespace-before-property': 'error',
         'no-spaced-func': 'error',
+        'no-tabs': 'error',
         'no-ternary': 'off',
         'no-trailing-spaces': 'error',
         'no-underscore-dangle': 'off',
