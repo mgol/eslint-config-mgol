@@ -181,7 +181,7 @@ module.exports = {
         'no-continue': 'off',
         'no-inline-comments': 'off',
         'no-lonely-if': 'error',
-        'no-mixed-operators': 'error',
+        'no-mixed-operators': ['error', {groups: [['&&', '||']], allowSamePrecedence: true}],
         'no-mixed-spaces-and-tabs': 'error',
         'no-multiple-empty-lines': ['error', {max: 2, maxEOF: 1}],
         'no-nested-ternary': 'error',
