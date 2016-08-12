@@ -155,7 +155,7 @@ module.exports = {
         'id-length': 'off',
         'id-match': 'off',
         'id-blacklist': ['error', 'arguments', 'event'],
-        indent: 'off', // TODO try to enable it
+        indent: ['error', 4, {SwitchCase: 1, MemberExpression: 1}],
         'jsx-quotes': 'off',
         'key-spacing': 'error',
         'keyword-spacing': 'error',
