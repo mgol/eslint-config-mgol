@@ -2,7 +2,7 @@
 
 module.exports = {
     parserOptions: {
-        ecmaVersion: 7,
+        ecmaVersion: 2016,
     },
 
     env: {
@@ -32,14 +32,15 @@ module.exports = {
         'no-inner-declarations': 'error',
         'no-invalid-regexp': 'error',
         'no-irregular-whitespace': 'error',
-        'no-negated-in-lhs': 'error',
         'no-obj-calls': 'error',
         'no-prototype-builtins': 'error',
         'no-regex-spaces': 'error',
         'no-sparse-arrays': 'error',
+        'no-template-curly-in-string': 'error',
         'no-unreachable': 'error',
         'use-isnan': 'error',
         'no-unsafe-finally': 'error',
+        'no-unsafe-negation': 'error',
         'valid-jsdoc': 'off', // TODO enable?
         'valid-typeof': 'error',
         'no-unexpected-multiline': 'error',
@@ -48,6 +49,7 @@ module.exports = {
         'accessor-pairs': 'error',
         'array-callback-return': 'error',
         'block-scoped-var': 'off',
+        'class-methods-use-this': 'off',
         complexity: ['warn', 10],
         'consistent-return': 'error',
         curly: 'error',
@@ -70,6 +72,7 @@ module.exports = {
         'no-extra-label': 'error',
         'no-fallthrough': 'error',
         'no-floating-decimal': 'error',
+        'no-global-assign': 'error',
         'no-implicit-coercion': ['error', {boolean: false, number: true, string: false}],
         'no-implicit-globals': 'error',
         'no-implied-eval': 'error',
@@ -81,7 +84,6 @@ module.exports = {
         'no-magic-numbers': 'off',
         'no-multi-spaces': 'error',
         'no-multi-str': 'error',
-        'no-native-reassign': 'error',
         'no-new-func': 'error',
         'no-new-wrappers': 'error',
         'no-new': 'error',
@@ -150,6 +152,7 @@ module.exports = {
         'computed-property-spacing': ['error', 'never'],
         'consistent-this': 'off',
         'eol-last': 'error',
+        'func-call-spacing': ['error', 'never'],
         'func-names': 'off',
         'func-style': ['error', 'expression'],
         'id-length': 'off',
@@ -190,7 +193,6 @@ module.exports = {
         'no-plusplus': 'off',
         // Already handled via no-with; would be: ['error', 'WithStatement']:
         'no-restricted-syntax': 'off',
-        'no-spaced-func': 'error',
         'no-tabs': 'error',
         'no-ternary': 'off',
         'no-trailing-spaces': 'error',
@@ -210,8 +212,10 @@ module.exports = {
         'require-jsdoc': 'off',
         'semi-spacing': 'error',
         semi: 'error',
+        'sort-keys': 'off',
         'sort-vars': 'off',
         'sort-imports': 'off', // It sorts by the member syntax, not by module names
+        'symbol-description': 'error',
         'space-before-blocks': 'error',
         'space-before-function-paren': ['error', {anonymous: 'always', named: 'never'}],
         'space-in-parens': ['error', 'never'],
@@ -250,5 +254,10 @@ module.exports = {
         'require-yield': 'off',
         'template-curly-spacing': ['error', 'always'],
         'yield-star-spacing': ['error', 'after'],
+
+        // Deprecated
+        'no-native-reassign': 'off',
+        'no-negated-in-lhs': 'off',
+        'no-spaced-func': 'off',
     },
 };
