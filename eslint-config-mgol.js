@@ -232,7 +232,6 @@ module.exports = {
             },
             block: {
                 markers: ['*', '**', '!'],
-                balanced: true,
             },
         }],
         'unicode-bom': ['error', 'never'],
