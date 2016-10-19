@@ -228,7 +228,7 @@ module.exports = {
         'space-unary-ops': 'error',
         'spaced-comment': ['error', 'always', {
             line: {
-                markers: ['/'],
+                exceptions: ['/'],
             },
             block: {
                 markers: ['*', '**', '!'],
