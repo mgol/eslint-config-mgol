@@ -26,8 +26,8 @@
   "license": "MIT",
   "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
-    "eslint": "3.8.0",
-    "eslint-find-rules": "1.14.0"
+    "eslint": "3.9.1",
+    "eslint-find-rules": "1.14.3"
   },
   "scripts": {
     "pretest": "eslint-find-rules -u",
