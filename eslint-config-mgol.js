@@ -13,7 +13,8 @@ module.exports = {
         // Rules are divided into sections from http://eslint.org/docs/rules/
 
         // Possible errors
-        'comma-dangle': ['error', 'always-multiline'],
+        'no-await-in-loop': 'error',
+        'no-compare-neg-zero': 'error',
         'no-cond-assign': 'error',
         'no-console': 'off',
         'no-constant-condition': ['error', {checkLoops: false}],
@@ -50,6 +51,13 @@ module.exports = {
         'array-callback-return': 'error',
         'block-scoped-var': 'off',
         'class-methods-use-this': 'off',
+        'comma-dangle': ['error', {
+            arrays: 'always-multiline',
+            objects: 'always-multiline',
+            imports: 'always-multiline',
+            exports: 'always-multiline',
+            functions: 'always-multiline',
+        }],
         complexity: ['warn', 10],
         'consistent-return': 'error',
         curly: 'error',
@@ -96,6 +104,7 @@ module.exports = {
         // We's use it for _.assign etc. but it won't work for `import {assign} from 'lodash'`.
         'no-restricted-properties': 'off',
         'no-return-assign': 'error',
+        'no-return-await': 'error',
         'no-script-url': 'error',
         'no-self-assign': 'error',
         'no-self-compare': 'error',
@@ -111,7 +120,9 @@ module.exports = {
         'no-void': 'error',
         'no-warning-comments': 'off',
         'no-with': 'error',
+        'prefer-promise-reject-errors': 'error',
         radix: 'off',
+        'require-await': 'off',
         'vars-on-top': 'off',
         'wrap-iife': ['error', 'inside'],
         yoda: 'error',
@@ -143,13 +154,17 @@ module.exports = {
         'no-process-exit': 'error',
         'no-restricted-imports': 'off',
         'no-restricted-modules': 'off',
-        'no-sync': 'off', // in some projects this might be useful
+        'no-sync': 'off', // In some projects this might be useful
 
         // Stylistic issues
         'array-bracket-spacing': ['error', 'never'],
         'block-spacing': ['error', 'never'],
         'brace-style': 'error',
         camelcase: 'off',
+        'capitalized-comments': ['error', 'always', {
+            ignoreInlineComments: true,
+            ignoreConsecutiveComments: true,
+        }],
         'comma-spacing': 'error',
         'comma-style': 'error',
         'computed-property-spacing': ['error', 'never'],
@@ -192,6 +207,7 @@ module.exports = {
         'no-lonely-if': 'error',
         'no-mixed-operators': ['error', {groups: [['&&', '||']], allowSamePrecedence: true}],
         'no-mixed-spaces-and-tabs': 'error',
+        'no-multi-assign': 'off',
         'no-multiple-empty-lines': ['error', {max: 2, maxEOF: 1}],
         'no-nested-ternary': 'error',
         'no-negated-condition': 'error',
@@ -205,6 +221,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-unneeded-ternary': 'error',
         'no-whitespace-before-property': 'error',
+        'nonblock-statement-body-position': 'off',
         'object-curly-newline': 'off',
         'object-curly-spacing': ['error', 'never'],
         'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
@@ -235,6 +252,7 @@ module.exports = {
                 markers: ['*', '**', '!'],
             },
         }],
+        'template-tag-spacing': ['error', 'never'],
         'unicode-bom': ['error', 'never'],
         'wrap-regex': 'off',
 
@@ -259,6 +277,7 @@ module.exports = {
         'object-shorthand': 'error',
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
+        'prefer-destructuring': 'off',
         'prefer-numeric-literals': 'error',
         'prefer-spread': 'error',
         'prefer-rest-params': 'error',
