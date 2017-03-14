@@ -161,10 +161,7 @@ module.exports = {
         'block-spacing': ['error', 'never'],
         'brace-style': 'error',
         camelcase: 'off',
-        'capitalized-comments': ['error', 'always', {
-            ignoreInlineComments: true,
-            ignoreConsecutiveComments: true,
-        }],
+        'capitalized-comments': 'off',
         'comma-spacing': 'error',
         'comma-style': 'error',
         'computed-property-spacing': ['error', 'never'],
