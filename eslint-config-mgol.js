@@ -210,8 +210,27 @@ module.exports = {
         'no-negated-condition': 'error',
         'no-new-object': 'error',
         'no-plusplus': 'off',
-        // Already handled via no-with; would be: ['error', 'WithStatement']:
-        'no-restricted-syntax': 'off',
+        // 'WithStatement' is already handled via no-with:
+        'no-restricted-syntax': [
+            'error',
+            {
+                selector: 'CallExpression[callee.name="fdescribe"]',
+                message: 'Using `fdescribe` is not allowed',
+            },
+            {
+                selector: 'CallExpression[callee.object.name="describe"]' +
+                    '[callee.property.name="only"]',
+                message: 'Using `describe.only` is not allowed',
+            },
+            {
+                selector: 'CallExpression[callee.name="fit"]',
+                message: 'Using `fit` is not allowed',
+            },
+            {
+                selector: 'CallExpression[callee.object.name="it"][callee.property.name="only"]',
+                message: 'Using `it.only` is not allowed',
+            },
+        ],
         'no-tabs': 'error',
         'no-ternary': 'off',
         'no-trailing-spaces': 'error',
