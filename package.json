@@ -26,11 +26,35 @@
   "license": "MIT",
   "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
-    "eslint": "4.19.1",
-    "eslint-find-rules": "3.2.3"
+    "eslint": "6.4.0",
+    "eslint-config-prettier": "6.3.0",
+    "eslint-find-rules": "3.4.0",
+    "husky": "3.0.7",
+    "lint-staged": "9.4.0",
+    "prettier": "1.18.2"
   },
   "scripts": {
-    "pretest": "eslint-find-rules -u",
-    "test": "eslint ."
+    "ensure-all-rules-specified": "eslint-find-rules -u eslint-config-mgol-test.js",
+    "ensure-prettier-rules-disabled": "eslint --print-config eslint-config-mgol.js | eslint-config-prettier-check",
+    "prettier-check": "prettier --check '**/*.{json,js,jsx,ts,tsx,md}'",
+    "prettier-format": "prettier --write '**/*.{json,js,jsx,ts,tsx,md}'",
+    "lint": "eslint . && npm run prettier-check",
+    "test": "npm run ensure-prettier-rules-disabled && npm run ensure-all-rules-specified && npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }

@@ -12,7 +12,7 @@ ESLint rules for my personal projects as well as some at [Laboratorium EE](http:
 Install the rules by running:
 
 ```
-npm install --save-dev eslint eslint-config-mgol 
+npm install --save-dev eslint eslint-config-mgol
 ```
 
 Then add the extends to your `.eslintrc.json`:
