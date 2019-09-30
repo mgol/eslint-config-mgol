@@ -237,7 +237,7 @@ module.exports = {
             },
         ],
         'prefer-object-spread': 'error',
-        quotes: ['error', 'single'],
+        quotes: 'off',
         'sort-keys': 'off',
         'sort-vars': 'off',
         'sort-imports': 'off', // It sorts by the member syntax, not by module names
