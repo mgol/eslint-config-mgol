@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mgol",
-  "version": "0.0.45",
+  "version": "0.0.46-pre",
   "description": "ESLint config for projects written by mgol",
   "main": "eslint-config-mgol.js",
   "files": [
