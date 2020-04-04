@@ -26,12 +26,12 @@
   "license": "MIT",
   "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
-    "eslint": "6.4.0",
-    "eslint-config-prettier": "6.3.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.1",
     "eslint-find-rules": "3.4.0",
-    "husky": "3.0.7",
-    "lint-staged": "9.4.0",
-    "prettier": "1.18.2"
+    "husky": "4.2.3",
+    "lint-staged": "10.1.1",
+    "prettier": "2.0.2"
   },
   "scripts": {
     "ensure-all-rules-specified": "eslint-find-rules -u eslint-config-mgol-test.js",
