@@ -50,6 +50,8 @@ module.exports = {
         'no-unreachable-loop': 'error',
         'no-unsafe-finally': 'error',
         'no-unsafe-negation': 'error',
+        'no-unsafe-optional-chaining': 'error',
+        'no-unused-private-class-members': 'error',
         'no-useless-backreference': 'error',
         'require-atomic-updates': 'error',
         'use-isnan': 'error',
@@ -102,6 +104,7 @@ module.exports = {
         'no-new-func': 'error',
         'no-new-wrappers': 'error',
         'no-new': 'error',
+        'no-nonoctal-decimal-escape': 'error',
         'no-octal-escape': 'error',
         'no-octal': 'error',
         'no-param-reassign': 'off',
@@ -230,7 +233,7 @@ module.exports = {
                 message: 'Comma expressions are disallowed',
             },
         ],
-        'no-tabs': 'error',
+        'no-tabs': ['error', { allowIndentationTabs: true }],
         'no-ternary': 'off',
         'no-underscore-dangle': 'off',
         'no-unneeded-ternary': 'error',
@@ -265,7 +268,7 @@ module.exports = {
             },
         ],
 
-        // ECMAScript 6
+        // ECMAScript 2015+
         'arrow-body-style': ['error', 'as-needed'],
         'constructor-super': 'error',
         'no-class-assign': 'error',
@@ -285,6 +288,7 @@ module.exports = {
         'prefer-const': 'error',
         'prefer-destructuring': 'off',
         'prefer-numeric-literals': 'error',
+        'prefer-object-has-own': 'error',
         'prefer-spread': 'error',
         'prefer-rest-params': 'error',
         'prefer-template': 'error',
