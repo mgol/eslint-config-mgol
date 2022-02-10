@@ -1,0 +1,35 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+            matrix:
+                node-version: [16.x]
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Cache
+              uses: actions/cache@v2
+              with:
+                  path: ~/.npm
+                  key: ${{ runner.os }}-node-${{ matrix.node-version }}-npm-lock-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-${{ matrix.node-version }}-npm-lock-
+
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v2.1.2
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Install dependencies
+              run: |
+                  npm install
+
+            - name: Run tests
+              run: |
+                  npm test

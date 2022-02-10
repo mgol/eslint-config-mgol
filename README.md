@@ -1,6 +1,6 @@
 # eslint-config-mgol
 
-[![travis build](https://img.shields.io/travis/mgol/eslint-config-mgol.svg?style=flat-square)](https://travis-ci.org/mgol/eslint-config-mgol)
+[![GitHub build](https://img.shields.io/github/workflow/status/mgol/eslint-config-mgol/CI?style=flat-square)](https://github.com/mgol/eslint-config-mgol/actions)
 [![version](https://img.shields.io/npm/v/eslint-config-mgol.svg?style=flat-square)](http://npm.im/eslint-config-mgol)
 [![downloads](https://img.shields.io/npm/dm/eslint-config-mgol.svg?style=flat-square)](http://npm-stat.com/charts.html?package=eslint-config-mgol)
 [![MIT License](https://img.shields.io/npm/l/eslint-config-mgol.svg?style=flat-square)](http://opensource.org/licenses/MIT)
