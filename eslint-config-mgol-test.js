@@ -1,7 +1,5 @@
-'use strict';
-
-const configPrettier = require('eslint-config-prettier');
-const configMgol = require('./eslint-config-mgol');
+import configPrettier from 'eslint-config-prettier';
+import configMgol from './eslint-config-mgol';
 
 const prettierOffRules = {};
 const incorrectlyDisabledRules = [];

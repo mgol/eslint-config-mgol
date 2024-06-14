@@ -1,7 +1,5 @@
-'use strict';
-
 // See https://prettier.io/docs/en/options.html
-module.exports = {
+export default {
     singleQuote: true,
 
     trailingComma: 'all',
