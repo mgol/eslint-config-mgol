@@ -1,7 +1,7 @@
 export default [
     {
         languageOptions: {
-            ecmaVersion: 2018,
+            ecmaVersion: 2024,
         },
 
         rules: {
@@ -200,8 +200,6 @@ export default [
             'max-nested-callbacks': 'off',
             'max-params': 'off',
             'max-statements': 'off',
-
-            'max-statements-per-line': 'off',
 
             'multiline-comment-style': 'off',
             'new-cap': 'off',

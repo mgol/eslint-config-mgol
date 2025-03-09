@@ -27,14 +27,15 @@
   "license": "MIT",
   "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
-    "eslint": "^9.4.0",
-    "eslint-config-prettier": "^9.1.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2"
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-find-rules": "^5.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1"
   },
   "scripts": {
-    "ensure-all-rules-specified": "eslint-find-rules -u eslint-config-mgol-test.js",
+    "ensure-all-rules-specified": "eslint-find-rules --flatConfig -u eslint-config-mgol-test.js",
     "ensure-prettier-rules-disabled": "eslint-config-prettier eslint-config-mgol.js",
     "prettier-check": "prettier --check '**/*.{json,js,yml,yaml,md}'",
     "prettier-format": "prettier --write '**/*.{json,js,yml,yaml,md}'",

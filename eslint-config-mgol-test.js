@@ -1,7 +1,6 @@
 import configPrettier from 'eslint-config-prettier';
-import configMgol from './eslint-config-mgol';
+import configMgol from './eslint-config-mgol.js';
 
-const prettierOffRules = {};
 const incorrectlyDisabledRules = [];
 
 for (const [rule, value] of Object.entries(configPrettier.rules)) {
@@ -9,11 +8,13 @@ for (const [rule, value] of Object.entries(configPrettier.rules)) {
     // Rules that partially conflict have the value of 0 instead of "off".
     // If those rules need to be disabled as well, do that manually in
     // the main config file.
-    if (value === 'off') {
-        prettierOffRules[rule] = 'off';
-        if (configMgol.rules[rule] === 'off' || configMgol.rules[rule] === 0) {
-            incorrectlyDisabledRules.push(rule);
-        }
+    if (value === 0) {
+        delete configPrettier.rules[rule];
+    } else if (
+        configMgol[0].rules[rule] === 'off' ||
+        configMgol[0].rules[rule] === 0
+    ) {
+        incorrectlyDisabledRules.push(rule);
     }
 }
 
@@ -22,14 +23,7 @@ if (incorrectlyDisabledRules.length) {
 Incorrectly disabled rules:
 ${incorrectlyDisabledRules.join('\n')}
 Only explicitly disable rules not disabled by the Prettier preset.
-    `);
+`);
 }
 
-module.exports = {
-    ...configMgol,
-
-    rules: {
-        ...configMgol.rules,
-        ...prettierOffRules,
-    },
-};
+export default [...configMgol, configPrettier];
