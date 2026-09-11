@@ -27,12 +27,12 @@
   "license": "MIT",
   "homepage": "https://github.com/mgol/eslint-config-mgol#readme",
   "devDependencies": {
-    "eslint": "^9.22.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-find-rules": "^5.0.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.5.3"
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-find-rules": "5.0.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "prettier": "3.9.6"
   },
   "scripts": {
     "ensure-all-rules-specified": "eslint-find-rules --flatConfig --unused eslint-config-mgol-test.js && echo 'No unused rules found' && eslint-find-rules --flatConfig --deprecated eslint-config-mgol.js && echo 'No deprecated rules found'",
